@@ -57,19 +57,25 @@ public:
                     case 0: return "Translate 'Good morning' to Georgian:";
                     case 1: return "\nTranslate 'Thanks' to Georgian:";
                     case 2: return "\nTranslate 'Goodbye' to Georgian:";
-                }
+                    default: return "";
+            }
+            break;
             case Intermediate:
                 switch(index) {
                     case 0: return "Write the Georgian word for 'water':";
                     case 1: return "\nTranslate 'friend' to Georgian:";
                     case 2: return "\nWrite the Georgian word for 'love':";
-                }
+                    default: return "";
+            }
+            break;
             case Advanced:
                 switch(index) {
                     case 0: return "Translate: 'I am learning Georgian'";
                     case 1: return "\nTranslate: 'This is my friend'";
                     case 2: return "\nTranslate: 'Georgia is a beautiful country'";
-                }
+                    default: return "";
+            }
+            break;
         }
     }
 
@@ -81,19 +87,25 @@ public:
                     case 0: return equalsIgnoreCase(userAnswer, "დილა მშვიდობისა") || equalsIgnoreCase(userAnswer, "dila mshvidobisa");
                     case 1: return equalsIgnoreCase(userAnswer, "მადლობა") || equalsIgnoreCase(userAnswer, "madloba");
                     case 2: return equalsIgnoreCase(userAnswer, "ნახვამდის") || equalsIgnoreCase(userAnswer, "nakhvamdis");
-                }
+                    default: return "";
+            }
+            break;
             case Intermediate:
                 switch(index) {
                     case 0: return equalsIgnoreCase(userAnswer, "წყალი") || equalsIgnoreCase(userAnswer, "tsqali");
                     case 1: return equalsIgnoreCase(userAnswer, "მეგობარი") || equalsIgnoreCase(userAnswer, "megobari");
                     case 2: return equalsIgnoreCase(userAnswer, "სიყვარული") || equalsIgnoreCase(userAnswer, "siqvaruli");
-                }
+                    default: return "";
+            }
+            break;
             case Advanced:
                 switch(index) {
                     case 0: return equalsIgnoreCase(userAnswer, "მე ვსწავლობ ქართულს") || equalsIgnoreCase(userAnswer, "me vstskhov karthuls");
                     case 1: return equalsIgnoreCase(userAnswer, "ეს არის ჩემი მეგობარი") || equalsIgnoreCase(userAnswer, "es aris chemi megobari");
                     case 2: return equalsIgnoreCase(userAnswer, "საქართველო ლამაზი ქვეყანაა") || equalsIgnoreCase(userAnswer, "sakartvelo lamazi kveqana");
-                }
+                    default: return "";
+            }
+            break;
         }
     }
     int getExerciseCount(Level level) const override {
@@ -126,19 +138,25 @@ public:
                     case 0: return "Translate 'Good morning' to Turkish:";
                     case 1: return "\nTranslate 'Thanks' to Turkish:";
                     case 2: return "\nTranslate 'Goodbye' to Turkish:";
-                }
+                    default: return "";
+            }
+            break;
             case Intermediate:
                 switch(index) {
                     case 0: return "Conjugate the verb 'to go' for 'I go' in Turkish:";
                     case 1: return "\nWrite the Turkish word for 'friend':";
                     case 2: return "\nWrite the Turkish word for 'water':";
-                }
+                    default: return "";
+            }
+            break;
             case Advanced:
                 switch(index) {
                     case 0: return "Translate 'I am learning Turkish' to Turkish:";
                     case 1: return "\nTranslate 'This is my friend' to Turkish:";
                     case 2: return "\nTranslate 'Turkey is a beautiful country' to Turkish:";
-                }
+                    default: return "";
+            }
+            break;
         }
 
     }
@@ -150,19 +168,25 @@ public:
                     case 0: return equalsIgnoreCase(userAnswer, "günaydın") || equalsIgnoreCase(userAnswer, "gunaydin");
                     case 1: return equalsIgnoreCase(userAnswer, "teşekkür ederim") || equalsIgnoreCase(userAnswer, "tesekkur ederim");
                     case 2: return equalsIgnoreCase(userAnswer, "hoşça kal") || equalsIgnoreCase(userAnswer, "hosca kal");
-                }
+                    default: return "";
+            }
+            break;
             case Intermediate:
                 switch(index) {
                     case 0: return equalsIgnoreCase(userAnswer, "gidiyorum");
                     case 1: return equalsIgnoreCase(userAnswer, "arkadaş") || equalsIgnoreCase(userAnswer, "arkadas");
                     case 2: return equalsIgnoreCase(userAnswer, "su");
-                }
+                    default: return "";
+            }
+            break;
             case Advanced:
                 switch(index) {
-                    case 0: return equalsIgnoreCase(userAnswer, "Türkçe öğreniyorum") || equalsIgnoreCase(userAnswer, "па");
+                    case 0: return equalsIgnoreCase(userAnswer, "Türkçe öğreniyorum") || equalsIgnoreCase(userAnswer, "Turkce ogreniyorum");
                     case 1: return equalsIgnoreCase(userAnswer, "Bu benim arkadaşım") || equalsIgnoreCase(userAnswer, "Bu benim arkadasim");
                     case 2: return equalsIgnoreCase(userAnswer, "Türkiye güzel bir ülke") || equalsIgnoreCase(userAnswer, "Turkiye guzel bir ulke");
-                }
+                    default: return "";
+            }
+            break;
         }
 
     }
@@ -194,19 +218,25 @@ public:
                     case 0: return "Translate 'Good morning' to Chinese:";
                     case 1: return "\nTranslate 'Thanks' to Chinese:";
                     case 2: return "\nTranslate 'Goodbye' to Chinese:";
-                }
+                    default: return "";
+            }
+            break;
             case Intermediate:
                 switch(index) {
                     case 0: return "Write the character for 'water':";
                     case 1: return "\nWrite the character for 'friend':";
                     case 2: return "\nWrite the character for 'love':";
-                }
+                    default: return "";
+            }
+            break;
             case Advanced:
                 switch(index) {
                     case 0: return "Translate: 'I am learning Chinese'";
                     case 1: return "\nTranslate: 'This is my friend'";
                     case 2: return "\nTranslate: 'China is a beautiful country'";
-                }
+                    default: return "";
+            }
+            break;
         }
 
     }
@@ -218,19 +248,25 @@ public:
                     case 0: return equalsIgnoreCase(userAnswer, "早上好") || equalsIgnoreCase(userAnswer, "zaoshang hao");
                     case 1: return equalsIgnoreCase(userAnswer, "谢谢") || equalsIgnoreCase(userAnswer, "xie xie");
                     case 2: return equalsIgnoreCase(userAnswer, "再见") || equalsIgnoreCase(userAnswer, "zai jian");
-                }
+                    default: return "";
+            }
+            break;
             case Intermediate:
                 switch(index) {
                     case 0: return equalsIgnoreCase(userAnswer, "水") || equalsIgnoreCase(userAnswer, "shui");
                     case 1: return equalsIgnoreCase(userAnswer, "朋友") || equalsIgnoreCase(userAnswer, "pengyou");
                     case 2: return equalsIgnoreCase(userAnswer, "爱") || equalsIgnoreCase(userAnswer, "ai");
-                }
+                    default: return "";
+            }
+            break;
             case Advanced:
                 switch(index) {
                     case 0: return equalsIgnoreCase(userAnswer, "我正在学中文") || equalsIgnoreCase(userAnswer, "wo zhengzai xue zhongwen");
                     case 1: return equalsIgnoreCase(userAnswer, "这是我的朋友") || equalsIgnoreCase(userAnswer, "zhe shi wo de pengyou");
                     case 2: return equalsIgnoreCase(userAnswer, "中国是一个美丽的国家") || equalsIgnoreCase(userAnswer, "zhongguo shi yi ge meili de guojia");
-                }
+                    default: return "";
+            }
+            break;
         }
 
     }
@@ -263,19 +299,25 @@ public:
                     case 0: return "Translate 'Good morning' to Dutch:";
                     case 1: return "\nTranslate 'Thanks' to Dutch:";
                     case 2: return "\nTranslate 'Goodbye' to Dutch:";
-                }
+                    default: return "";
+            }
+            break;
             case Intermediate:
                 switch(index) {
                     case 0: return "Write the Dutch word for 'water':";
                     case 1: return "\nWrite the Dutch word for 'friend':";
                     case 2: return "\nWrite the Dutch word for 'love':";
-                }
+                    default: return "";
+            }
+            break;
             case Advanced:
                 switch(index) {
                     case 0: return "Translate: 'I am learning Dutch'";
                     case 1: return "\nTranslate: 'This is my friend'";
                     case 2: return "\nTranslate: 'The Netherlands is a beautiful country'";
-                }
+                    default: return "";
+            }
+            break;
         }
 
     }
@@ -287,19 +329,25 @@ public:
                     case 0: return equalsIgnoreCase(userAnswer, "goedemorgen");
                     case 1: return equalsIgnoreCase(userAnswer, "bedankt") || equalsIgnoreCase(userAnswer, "dank je");
                     case 2: return equalsIgnoreCase(userAnswer, "tot ziens") || equalsIgnoreCase(userAnswer, "dag");
-                }
+                    default: return "";
+            }
+            break;
             case Intermediate:
                 switch(index) {
                     case 0: return equalsIgnoreCase(userAnswer, "water");
                     case 1: return equalsIgnoreCase(userAnswer, "vriend");
                     case 2: return equalsIgnoreCase(userAnswer, "liefde");
-                }
+                    default: return "";
+            }
+            break;
             case Advanced:
                 switch(index) {
                     case 0: return equalsIgnoreCase(userAnswer, "ik leer nederlands");
                     case 1: return equalsIgnoreCase(userAnswer, "dit is mijn vriend");
                     case 2: return equalsIgnoreCase(userAnswer, "nederland is een mooi land");
-                }
+                    default: return "";
+            }
+            break;
         }
     }
 
@@ -338,6 +386,7 @@ int main() {
     std::cout <<std::endl;
     lang->sayHello();
     lang->preparatoryTask();
+
 
 
     std::cout << "\n\n---< Exercises >---\n";
