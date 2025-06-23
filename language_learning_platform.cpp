@@ -4,6 +4,7 @@
 #include <algorithm>
 #include <fstream>
 #include <vector>
+#include "header_language.hpp"
 
 std::string toLower(const std::string& s) {
     std::string result = s;
@@ -16,25 +17,7 @@ bool equalsIgnoreCase(const std::string& a, const std::string& b) {
     return toLower(a) == toLower(b);
 }
 
-enum Level {
-    Beginner = 1,
-    Intermediate,
-    Advanced
-};
 
-class Language {
-public:
-    virtual ~Language() {}
-
-    virtual void sayHello() const = 0;
-    virtual void characteristic() const = 0;
-    virtual void preparatoryTask() const = 0;
-
-    virtual std::string generateExercise(int index, Level level) const = 0;
-    virtual bool checkAnswer(const std::string& userAnswer, int index, Level level) const = 0;
-    virtual int getExerciseCount(Level level) const = 0;
-    virtual void keyboardInfo() const = 0;
-};
 
 class Georgian : public Language {
 public:
@@ -78,6 +61,7 @@ public:
             }
             break;
         }
+        return "";
     }
 
     bool checkAnswer(const std::string& userAnswer, int index, Level level) const override {
@@ -107,6 +91,7 @@ public:
             }
             break;
         }
+        return false;
     }
 
     int getExerciseCount(Level level) const override {
@@ -425,7 +410,7 @@ public:
         return 3;
     }
 };
-
+#ifndef TESTS
 int main() {
     std::ofstream resultsFile("language_learning_results.txt", std::ios::app);
     if (!resultsFile.is_open()) {
@@ -513,3 +498,4 @@ int main() {
     resultsFile.close();
     return 0;
 }
+#endif
